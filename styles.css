@@ -62,7 +62,35 @@ body::before {
     background-repeat: no-repeat;
     background-attachment: fixed;
     opacity: 0.25;
+    z-index: -3;
+}
+
+/* Twinkling Stars Layer */
+.stars-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/img/stars.png');
+    background-repeat: repeat;
+    background-size: 400px 400px;
+    opacity: 0.4;
     z-index: -2;
+    pointer-events: none;
+    animation: starsTwinkle 8s ease-in-out infinite;
+}
+
+@keyframes starsTwinkle {
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
 }
 
 /* Cosmic Galaxy Overlay */
