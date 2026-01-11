@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Statistics Mid Term Syllabus | Mudassar Ahmed</title>
+    <meta name="description"
+        content="Statistics mid term syllabus covering central tendency, probability, random variables, and linear regression.">
+    <meta name="author" content="Mudassar Ahmed">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mudassar.tech/stat/">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .syllabus-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .syllabus-card:hover {
+            border-color: var(--primary);
+        }
+
+        .chapter-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .chapter-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-light);
+        }
+
+        .chapter-buttons {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .btn-view,
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .btn-view {
+            background: rgba(30, 144, 255, 0.15);
+            color: var(--primary-light);
+            border: 1px solid var(--primary);
+        }
+
+        .btn-view:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-download {
+            background: var(--bg-alt);
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+        }
+
+        .btn-download:hover {
+            border-color: var(--primary);
+            color: var(--text-primary);
+        }
+
+        .topic-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .topic-list li {
+            padding: 0.5rem 0 0.5rem 1.5rem;
+            position: relative;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .topic-list li:last-child {
+            border-bottom: none;
+        }
+
+        .topic-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary-light);
+        }
+
+        .optional-badge {
+            background: rgba(255, 193, 7, 0.2);
+            color: #ffc107;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+
+        .important-badge {
+            background: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .back-link:hover {
+            color: var(--primary-light);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../" class="nav-logo">MA</a>
+            <ul class="nav-menu">
+                <li><a href="../#about">About</a></li>
+                <li><a href="../#publications">Publications</a></li>
+                <li><a href="../#skills">Skills</a></li>
+                <li><a href="../#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="section" style="padding-top: 8rem;">
+        <div class="container">
+            <a href="../" class="back-link">← Back to Portfolio</a>
+            <h1 class="section-title">Mid Term Syllabus</h1>
+            <p style="color: var(--text-secondary); margin-bottom: 3rem; font-size: 1.1rem;">
+                Statistics & Probability — Click on chapters to view PDFs or download for offline study.
+            </p>
+
+            <!-- Chapter 1 -->
+            <div class="syllabus-card">
+                <div class="chapter-header">
+                    <span class="chapter-title">1. Introduction to Statistics and Data Analysis</span>
+                    <div class="chapter-buttons">
+                        <a href="1.pdf" target="_blank" class="btn-view">📄 View PDF</a>
+                        <a href="1.pdf" download class="btn-download">⬇ Download</a>
+                    </div>
+                </div>
+                <ul class="topic-list">
+                    <li>Definition of Statistics</li>
+                    <li>Data Analysis (Introduction)</li>
+                    <li>Statistical Inference</li>
+                    <li>Samples, Populations</li>
+                    <li>Sampling Procedures</li>
+                    <li>Discrete and Continuous Data</li>
+                </ul>
+            </div>
+
+            <!-- Chapter 2 -->
+            <div class="syllabus-card">
+                <div class="chapter-header">
+                    <span class="chapter-title">2. Measure of Central Tendency and Dispersion</span>
+                    <div class="chapter-buttons">
+                        <a href="2.pdf" target="_blank" class="btn-view">📄 View PDF</a>
+                        <a href="2.pdf" download class="btn-download">⬇ Download</a>
+                    </div>
+                </div>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem; font-style: italic;">
+                    Focus on formulae and short definitions
+                </p>
+                <ul class="topic-list">
+                    <li>Mean, Median, Mode</li>
+                    <li>Variance, Standard Deviation</li>
+                    <li>All quantities covered in the attached PDF</li>
+                </ul>
+            </div>
+
+            <!-- Chapter 3 -->
+            <div class="syllabus-card">
+                <div class="chapter-header">
+                    <span class="chapter-title">3. Presentation of Data <span
+                            class="optional-badge">Optional</span></span>
+                    <div class="chapter-buttons">
+                        <a href="3.pdf" target="_blank" class="btn-view">📄 View PDF</a>
+                        <a href="3.pdf" download class="btn-download">⬇ Download</a>
+                    </div>
+                </div>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem; font-style: italic;">
+                    Just read only and keep in mind — don't give too much time
+                </p>
+                <ul class="topic-list">
+                    <li>Different Types of Tables</li>
+                    <li>Different Types of Graphs</li>
+                </ul>
+            </div>
+
+            <!-- Chapter 4 -->
+            <div class="syllabus-card">
+                <div class="chapter-header">
+                    <span class="chapter-title">4. Probability</span>
+                    <div class="chapter-buttons">
+                        <a href="4.pdf" target="_blank" class="btn-view">📄 View PDF</a>
+                        <a href="4.pdf" download class="btn-download">⬇ Download</a>
+                    </div>
+                </div>
+                <ul class="topic-list">
+                    <li>Sets (just go through, don't give too much time)</li>
+                    <li>Permutation, Combination (only definition and formula)</li>
+                    <li>Probability (Definitions and its properties)</li>
+                    <li>Sample Space, Events, Counting Sample Points</li>
+                    <li>Probability of an Event</li>
+                    <li>Independent Probabilities</li>
+                    <li>Conditional Probability <span class="important-badge">Most Important</span></li>
+                    <li>Additive Rules and Multiplication (Product) Rules</li>
+                </ul>
+            </div>
+
+            <!-- Chapter 5 -->
+            <div class="syllabus-card">
+                <div class="chapter-header">
+                    <span class="chapter-title">5. Random Variables</span>
+                    <div class="chapter-buttons">
+                        <a href="5.pdf" target="_blank" class="btn-view">📄 View PDF</a>
+                        <a href="5.pdf" download class="btn-download">⬇ Download</a>
+                    </div>
+                </div>
+                <ul class="topic-list">
+                    <li>Definition</li>
+                    <li>Discrete Probability Distribution in terms of Random Variables</li>
+                    <li>Continuous Probability Distribution in terms of Random Variables</li>
+                    <li>Mathematical Expectation of a Random Variable</li>
+                </ul>
+            </div>
+
+            <!-- Chapter 6 -->
+            <div class="syllabus-card">
+                <div class="chapter-header">
+                    <span class="chapter-title">6. Simple Linear Regression</span>
+                    <div class="chapter-buttons">
+                        <a href="6.pdf" target="_blank" class="btn-view">📄 View PDF</a>
+                        <a href="6.pdf" download class="btn-download">⬇ Download</a>
+                    </div>
+                </div>
+                <ul class="topic-list">
+                    <li>Complete chapter</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mudassar Ahmed. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
