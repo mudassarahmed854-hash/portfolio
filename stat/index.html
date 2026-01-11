@@ -180,35 +180,39 @@
         /* Mobile Responsive Styles */
         @media (max-width: 768px) {
             .page-header {
-                padding: 1rem;
+                padding: 0.75rem 1rem;
             }
 
             .header-container {
-                flex-direction: column;
-                gap: 0.75rem;
-                text-align: center;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 0.5rem;
             }
 
             .page-title {
-                font-size: 1.1rem;
+                font-size: 0.9rem;
+            }
+
+            .main-site-link {
+                font-size: 0.75rem;
+                padding: 0.4rem 0.6rem;
             }
 
             .section {
-                padding: 5rem 1rem 2rem;
+                padding: 4.5rem 1rem 2rem;
             }
 
             .section-title {
-                font-size: 1.75rem;
+                font-size: 1.5rem;
             }
 
             .syllabus-card {
-                padding: 1.25rem;
+                padding: 1rem;
                 flex-direction: column !important;
-                text-align: center;
             }
 
             .syllabus-card img {
-                width: 100px !important;
+                width: 80px !important;
                 margin: 0 auto 1rem;
             }
 
@@ -218,23 +222,27 @@
             }
 
             .chapter-title {
-                font-size: 1.05rem;
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
             }
 
             .chapter-buttons {
-                width: 100%;
-                flex-direction: column;
+                display: flex;
+                flex-direction: row;
+                gap: 0.5rem;
+                margin-top: 0.75rem;
+                order: 10;
             }
 
             .btn-view,
             .btn-download {
-                width: 100%;
-                justify-content: center;
-                padding: 0.75rem;
+                font-size: 0.7rem;
+                padding: 0.4rem 0.6rem;
             }
 
             .topic-list li {
-                font-size: 0.9rem;
+                font-size: 0.85rem;
+                padding: 0.4rem 0 0.4rem 1.25rem;
             }
         }
     </style>
@@ -259,14 +267,7 @@
 
             <!-- Chapter 1 -->
             <div class="syllabus-card">
-                <div class="chapter-header">
-                    <span class="chapter-title">1. Introduction to Statistics and Data Analysis</span>
-                    <div class="chapter-buttons">
-                        <a href="https://docs.google.com/viewer?url=https://mudassar.tech/stat/1.pdf" target="_blank"
-                            class="btn-view">📄 View PDF</a>
-                        <a href="1.pdf" download class="btn-download">⬇ Download</a>
-                    </div>
-                </div>
+                <span class="chapter-title">1. Introduction to Statistics and Data Analysis</span>
                 <ul class="topic-list">
                     <li>Definition of Statistics</li>
                     <li>Data Analysis (Introduction)</li>
@@ -275,19 +276,17 @@
                     <li>Sampling Procedures</li>
                     <li>Discrete and Continuous Data</li>
                 </ul>
+                <div class="chapter-buttons">
+                    <a href="https://docs.google.com/viewer?url=https://mudassar.tech/stat/1.pdf" target="_blank"
+                        class="btn-view">📄 View</a>
+                    <a href="1.pdf" download class="btn-download">⬇ Download</a>
+                </div>
             </div>
 
             <!-- Chapter 2 -->
             <div class="syllabus-card">
-                <div class="chapter-header">
-                    <span class="chapter-title">2. Measure of Central Tendency and Dispersion</span>
-                    <div class="chapter-buttons">
-                        <a href="https://docs.google.com/viewer?url=https://mudassar.tech/stat/2.pdf" target="_blank"
-                            class="btn-view">📄 View PDF</a>
-                        <a href="2.pdf" download class="btn-download">⬇ Download</a>
-                    </div>
-                </div>
-                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem; font-style: italic;">
+                <span class="chapter-title">2. Measure of Central Tendency and Dispersion</span>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0.5rem 0 1rem; font-style: italic;">
                     Focus on formulae and short definitions
                 </p>
                 <ul class="topic-list">
@@ -295,38 +294,33 @@
                     <li>Variance, Standard Deviation</li>
                     <li>All quantities covered in the attached PDF</li>
                 </ul>
+                <div class="chapter-buttons">
+                    <a href="https://docs.google.com/viewer?url=https://mudassar.tech/stat/2.pdf" target="_blank"
+                        class="btn-view">📄 View</a>
+                    <a href="2.pdf" download class="btn-download">⬇ Download</a>
+                </div>
             </div>
 
             <!-- Chapter 3 -->
             <div class="syllabus-card">
-                <div class="chapter-header">
-                    <span class="chapter-title">3. Presentation of Data <span
-                            class="optional-badge">Optional</span></span>
-                    <div class="chapter-buttons">
-                        <a href="https://docs.google.com/viewer?url=https://mudassar.tech/stat/3.pdf" target="_blank"
-                            class="btn-view">📄 View PDF</a>
-                        <a href="3.pdf" download class="btn-download">⬇ Download</a>
-                    </div>
-                </div>
-                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem; font-style: italic;">
+                <span class="chapter-title">3. Presentation of Data <span class="optional-badge">Optional</span></span>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0.5rem 0 1rem; font-style: italic;">
                     Just read only and keep in mind — don't give too much time
                 </p>
                 <ul class="topic-list">
                     <li>Different Types of Tables</li>
                     <li>Different Types of Graphs</li>
                 </ul>
+                <div class="chapter-buttons">
+                    <a href="https://docs.google.com/viewer?url=https://mudassar.tech/stat/3.pdf" target="_blank"
+                        class="btn-view">📄 View</a>
+                    <a href="3.pdf" download class="btn-download">⬇ Download</a>
+                </div>
             </div>
 
             <!-- Chapter 4 -->
             <div class="syllabus-card">
-                <div class="chapter-header">
-                    <span class="chapter-title">4. Probability</span>
-                    <div class="chapter-buttons">
-                        <a href="https://docs.google.com/viewer?url=https://mudassar.tech/stat/4.pdf" target="_blank"
-                            class="btn-view">📄 View PDF</a>
-                        <a href="4.pdf" download class="btn-download">⬇ Download</a>
-                    </div>
-                </div>
+                <span class="chapter-title">4. Probability</span>
                 <ul class="topic-list">
                     <li>Sets (just go through, don't give too much time)</li>
                     <li>Permutation, Combination (only definition and formula)</li>
@@ -337,39 +331,40 @@
                     <li>Conditional Probability <span class="important-badge">Most Important</span></li>
                     <li>Additive Rules and Multiplication (Product) Rules</li>
                 </ul>
+                <div class="chapter-buttons">
+                    <a href="https://docs.google.com/viewer?url=https://mudassar.tech/stat/4.pdf" target="_blank"
+                        class="btn-view">📄 View</a>
+                    <a href="4.pdf" download class="btn-download">⬇ Download</a>
+                </div>
             </div>
 
             <!-- Chapter 5 -->
             <div class="syllabus-card">
-                <div class="chapter-header">
-                    <span class="chapter-title">5. Random Variables</span>
-                    <div class="chapter-buttons">
-                        <a href="https://docs.google.com/viewer?url=https://mudassar.tech/stat/5.pdf" target="_blank"
-                            class="btn-view">📄 View PDF</a>
-                        <a href="5.pdf" download class="btn-download">⬇ Download</a>
-                    </div>
-                </div>
+                <span class="chapter-title">5. Random Variables</span>
                 <ul class="topic-list">
                     <li>Definition</li>
                     <li>Discrete Probability Distribution in terms of Random Variables</li>
                     <li>Continuous Probability Distribution in terms of Random Variables</li>
                     <li>Mathematical Expectation of a Random Variable</li>
                 </ul>
+                <div class="chapter-buttons">
+                    <a href="https://docs.google.com/viewer?url=https://mudassar.tech/stat/5.pdf" target="_blank"
+                        class="btn-view">📄 View</a>
+                    <a href="5.pdf" download class="btn-download">⬇ Download</a>
+                </div>
             </div>
 
             <!-- Chapter 6 -->
             <div class="syllabus-card">
-                <div class="chapter-header">
-                    <span class="chapter-title">6. Simple Linear Regression</span>
-                    <div class="chapter-buttons">
-                        <a href="https://docs.google.com/viewer?url=https://mudassar.tech/stat/6.pdf" target="_blank"
-                            class="btn-view">📄 View PDF</a>
-                        <a href="6.pdf" download class="btn-download">⬇ Download</a>
-                    </div>
-                </div>
+                <span class="chapter-title">6. Simple Linear Regression</span>
                 <ul class="topic-list">
                     <li>Complete chapter</li>
                 </ul>
+                <div class="chapter-buttons">
+                    <a href="https://docs.google.com/viewer?url=https://mudassar.tech/stat/6.pdf" target="_blank"
+                        class="btn-view">📄 View</a>
+                    <a href="6.pdf" download class="btn-download">⬇ Download</a>
+                </div>
             </div>
 
             <!-- Recommended Books Section -->
