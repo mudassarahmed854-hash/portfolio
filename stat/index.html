@@ -21,6 +21,50 @@
         rel="stylesheet">
 
     <style>
+        .page-header {
+            padding: 1.5rem 2rem;
+            background: rgba(10, 10, 15, 0.95);
+            border-bottom: 1px solid var(--border);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            backdrop-filter: blur(20px);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .page-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .main-site-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-light);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--primary);
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+        }
+
+        .main-site-link:hover {
+            background: var(--primary);
+            color: white;
+        }
+
         .syllabus-card {
             background: var(--bg-card);
             border: 1px solid var(--border);
@@ -132,45 +176,24 @@
             font-weight: 600;
             margin-left: 0.5rem;
         }
-
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-weight: 500;
-            margin-bottom: 2rem;
-            transition: var(--transition);
-        }
-
-        .back-link:hover {
-            color: var(--primary-light);
-        }
     </style>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="../" class="nav-logo">MA</a>
-            <ul class="nav-menu">
-                <li><a href="../#about">About</a></li>
-                <li><a href="../#publications">Publications</a></li>
-                <li><a href="../#skills">Skills</a></li>
-                <li><a href="../#contact">Contact</a></li>
-            </ul>
+    <!-- Simple Header -->
+    <header class="page-header">
+        <div class="header-container">
+            <span class="page-title">📊 Statistics Syllabus</span>
+            <a href="https://mudassar.tech/" class="main-site-link">← Go to Main Site</a>
         </div>
-    </nav>
+    </header>
 
     <!-- Main Content -->
-    <section class="section" style="padding-top: 8rem;">
+    <section class="section" style="padding-top: 7rem;">
         <div class="container">
-            <a href="../" class="back-link">← Back to Portfolio</a>
             <h1 class="section-title">Mid Term Syllabus</h1>
             <p style="color: var(--text-secondary); margin-bottom: 3rem; font-size: 1.1rem;">
-                Statistics & Probability — Click on chapters to view PDFs or download for offline study.
+                Statistics & Probability — Click "View PDF" to read in browser or "Download" for offline study.
             </p>
 
             <!-- Chapter 1 -->
@@ -178,7 +201,8 @@
                 <div class="chapter-header">
                     <span class="chapter-title">1. Introduction to Statistics and Data Analysis</span>
                     <div class="chapter-buttons">
-                        <a href="1.pdf" target="_blank" class="btn-view">📄 View PDF</a>
+                        <a href="https://docs.google.com/viewer?url=https://mudassar.tech/stat/1.pdf" target="_blank"
+                            class="btn-view">📄 View PDF</a>
                         <a href="1.pdf" download class="btn-download">⬇ Download</a>
                     </div>
                 </div>
@@ -197,7 +221,8 @@
                 <div class="chapter-header">
                     <span class="chapter-title">2. Measure of Central Tendency and Dispersion</span>
                     <div class="chapter-buttons">
-                        <a href="2.pdf" target="_blank" class="btn-view">📄 View PDF</a>
+                        <a href="https://docs.google.com/viewer?url=https://mudassar.tech/stat/2.pdf" target="_blank"
+                            class="btn-view">📄 View PDF</a>
                         <a href="2.pdf" download class="btn-download">⬇ Download</a>
                     </div>
                 </div>
@@ -217,7 +242,8 @@
                     <span class="chapter-title">3. Presentation of Data <span
                             class="optional-badge">Optional</span></span>
                     <div class="chapter-buttons">
-                        <a href="3.pdf" target="_blank" class="btn-view">📄 View PDF</a>
+                        <a href="https://docs.google.com/viewer?url=https://mudassar.tech/stat/3.pdf" target="_blank"
+                            class="btn-view">📄 View PDF</a>
                         <a href="3.pdf" download class="btn-download">⬇ Download</a>
                     </div>
                 </div>
@@ -235,7 +261,8 @@
                 <div class="chapter-header">
                     <span class="chapter-title">4. Probability</span>
                     <div class="chapter-buttons">
-                        <a href="4.pdf" target="_blank" class="btn-view">📄 View PDF</a>
+                        <a href="https://docs.google.com/viewer?url=https://mudassar.tech/stat/4.pdf" target="_blank"
+                            class="btn-view">📄 View PDF</a>
                         <a href="4.pdf" download class="btn-download">⬇ Download</a>
                     </div>
                 </div>
@@ -256,7 +283,8 @@
                 <div class="chapter-header">
                     <span class="chapter-title">5. Random Variables</span>
                     <div class="chapter-buttons">
-                        <a href="5.pdf" target="_blank" class="btn-view">📄 View PDF</a>
+                        <a href="https://docs.google.com/viewer?url=https://mudassar.tech/stat/5.pdf" target="_blank"
+                            class="btn-view">📄 View PDF</a>
                         <a href="5.pdf" download class="btn-download">⬇ Download</a>
                     </div>
                 </div>
@@ -273,7 +301,8 @@
                 <div class="chapter-header">
                     <span class="chapter-title">6. Simple Linear Regression</span>
                     <div class="chapter-buttons">
-                        <a href="6.pdf" target="_blank" class="btn-view">📄 View PDF</a>
+                        <a href="https://docs.google.com/viewer?url=https://mudassar.tech/stat/6.pdf" target="_blank"
+                            class="btn-view">📄 View PDF</a>
                         <a href="6.pdf" download class="btn-download">⬇ Download</a>
                     </div>
                 </div>
@@ -291,18 +320,6 @@
             <p>&copy; 2025 Mudassar Ahmed. All rights reserved.</p>
         </div>
     </footer>
-
-    <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-    </script>
 </body>
 
 </html>
